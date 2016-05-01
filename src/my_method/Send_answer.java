@@ -27,7 +27,7 @@ public class Send_answer {
         bSend_handle = bSend;
     }
     
-    @SuppressWarnings("deprecation")
+  
     public void sender(String name,String surname, String content,String date) throws FileNotFoundException
     {   
      
@@ -80,8 +80,8 @@ public class Send_answer {
             
             taArea_handle.setText("Send Complet");
         } else
-        {
-            bSend_handle.hide();
+        {   
+            bSend_handle.setVisible(false);
             taArea_handle.setText("Time to answer complete" +" "+ date_memory);
         }
     

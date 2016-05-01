@@ -21,11 +21,10 @@ public class Check_amount {
        lTime_handle = lTime;
        bSend_handle = bSend;
        taArea_handle = taArea;
-       
    }
     
     
-    @SuppressWarnings("deprecation")
+    
     public void check(int nr_answer,int max_answer)
     {
         File catalog = new File("Answer\\");
@@ -43,7 +42,7 @@ public class Check_amount {
             lTime_handle.setForeground(Color.RED);
             if(nr_answer > max_answer)
             {
-            bSend_handle.hide();
+            bSend_handle.setVisible(false);
             taArea_handle.setText("To late :(");
             }
             
